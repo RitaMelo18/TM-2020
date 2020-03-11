@@ -13,15 +13,15 @@ function getInfo(){
         "ID:" + link.id + "<br>" +
         "Target:" + link.target + "<br>" +
         "Type:" + link.type + "<br>" +
-        "Href:" + link.href + "<br>"
+        "Href:" + link.href + "<br>";
 }
 function setClick(){
     var table2= document.getElementById('table');
     var cells = document.getElementsByTagName("td");
-    console.log(cells)
+    console.log(cells);
     for(var i=0; i<cells.length; i++){
         cells[i].onclick = function () {
-            this.innerText = clickTd()
+            this.innerText = clickTd();
             this.style.backgroundColor = "green";
         }
     }
